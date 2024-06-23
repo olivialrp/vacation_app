@@ -24,7 +24,7 @@ Navigate to the project folder and install the required dependencies:
 cd vacation-management-app
 pip install -r requirements.txt
 
-## Run the App:
+# Run the App:
 streamlit run vacation_app.py
 
 ## Usage
