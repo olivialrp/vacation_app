@@ -14,7 +14,7 @@ def login():
     users = {user.name: user for user in users}
     st.write(users)
     with st.container(border=True):
-        st.markdown("welcome to the vacation webapp")
+        st.markdown("Welcome to the Vacation WebApp")
         user_name = st.selectbox("Please select a user", users.keys())
         password = st.text_input("Please type your password", type='password')
         if st.button("Access"):
@@ -205,7 +205,7 @@ def calendar_page():
             with cols[0]:
                 st.warning(f"ending vacation day selected {date}")
             with cols[1]:
-                st.button('Add vacation', use_container_width=True, on_click=check_and_add_vacation, args=start_vacation, date)
+                st.button('Add vacation', start_vacation, date, use_container_width=True, on_click=check_and_add_vacation)
 
     st.write(calendar_widget)
 
